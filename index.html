@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: xxx-large;
+        text-align: center;
+        text-shadow: rgb(0, 0, 0) 0.07em 0.03em 0.066em;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        text-shadow: rgb(0, 0, 0) 0.03em 0.03em 0.066em;
+        -webkit-text-fill-color: rgb(67, 242, 255);
+
+        text-overflow: ellipsis;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(126, 119, 112);
+        background-blend-mode: darken;
+        animation: opening 10s ease infinite alternate;
+    }
+
+    @keyframes opening {
+        from {
+            background-color: rgb(0, 0, 0);
+        }
+
+        to {
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    
+
+    .hr2 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: medium;
+    }
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    position: relative;
+    margin-top: -75px;
+    z-index: 10;
+
+    border: 4px solid rgb(2, 120, 255);
+    box-shadow: 0 0 20px black;
+}
+
+.Album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Album img:hover {
+    box-shadow: 0px 0px 20px rgba(3, 0, 0, 0.8);
+    border-radius: 0%;
+    transform: scale(1.05); /* 15% bigger */
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 200px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(0, 0, 0)
+    );
+
+    z-index: 1;
+}
+
+.faq {
+    max-width: 700px;
+    margin: auto;
+}
+
+details {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+.banner-text {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img {
+  box-shadow: 0.1px 3px #5670ff;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="banner">
+    <img src="https://beeimg.com/images/z77329154333.jpg" alt="Banner">
+    </div>
+</div>
+
+<img class="profile"
+src="https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages211/v4/43/c8/2e/43c82e0e-8e37-ce2d-ad3a-7054113ff162/ami-identity-d24d07ec0e223b928fdfcd792044bb42-2026-04-09T19-36-29.266Z_cropped.png/486x486bb.png"
+alt="Profile">
+
+
+<h1>Hello!</h1>
+
+<p class="hr2">
+    Welcome! <b>This is my homepage!</b>
+</p>
+
+<hr>
+
+
+<p class="hr2">
+    My name is Tyler Swartz, I'm a musician that makes electronic and new age music.
+    You can find my work on YouTube, Spotify, Apple Music, etc.
+</p>
+
+<div class="gallery">
+    <div class="Album">
+<a href="https://www.youtube.com/playlist?list=OLAK5uy_kd2LN_9eEF9cm7-lMGbEi_sZhC8cnbGUQ" target="_blank"><img src="https://images.genius.com/300372e98024d9c17e3bfe63e900d7d7.512x512x1.jpg" alt="Image 1" width="320" height="310"></a>
+    <a href="https://www.youtube.com/watch?v=q_BTnT6xWHc" target="_blank"><img src="https://images.genius.com/7a99384146e102f5a8e8061bcf3236b0.512x512x1.jpg" alt="Image 1" width="320" height="310"></a>
+    <a href="https://www.youtube.com/watch?v=IgdjCFsOre4&list=OLAK5uy_lz5qXtgwnHAWnEPWH6WPVTuoQ0eukLRJc" target="_blank"><img src="https://images.genius.com/afc3497da523f716220294e03723d5bc.512x512x1.jpg" alt="Image 2" width="320" height="310"></a>
+        <a href="https://www.youtube.com/playlist?list=OLAK5uy_ktwl1GyhUHLh27cj42t1578cHtQV50Et4&playnext=1&index=1" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/da/3f/ecda3f91-bbfc-fabd-100d-4a9726112d3a/artwork.jpg/400x400bb.webp" alt="Image 1" width="320" height="310"></a>
+    <a href="https://www.youtube.com/watch?v=22JIRnpC13E&list=OLAK5uy_ljepVBfdkRwCuV0liNfA27cDVzJ1El948&index=2" target="_blank"><img src="https://images.genius.com/259af4e6e0a4758f7dd680b5fb5a225e.300x300x1.jpg" alt="Image 2" width="320" height="310"></a>
+    </div>
+<div class="gallery">
+
+<br>
+<h1>Questions & Answers<h1>
+<hr>
+<p class="hr2">
+    Are you wondering the answers to these questions, I will answer these questions for you.
+    <div class="FAQ Things">
+        <details>
+            <summary>What main genres do you use?</summary>
+            <p class="hr2">
+    I make New Age and Electronic music, specifically relaxation and adventerous songs.
+</p>
+        </details>
+                <details>
+            <summary>Do you have any contact info?</summary>
+            <p class="hr2">
+    Not yet, I'll update this section once I get an email for you.
+</p>
+        </details>
+                <details>
+            <summary>What record labels are you associated with?</summary>
+            <p class="hr2">
+    I own two main records, ItzMusic! Records and WCOA Records, both don't have emails.
+</p>
+        </details>
+                <details>
+            <summary>Can you do song requests?</summary>
+            <p class="hr2">
+    I typically don't accept song requests, however if you are one of my friends, I'll consider making the song track in question.
+</p>
+        </details>
+    </div>
+</p>
+<br>
+<h1>Streaming Links / Platforms</h1>
+<hr>
+<a href="https://www.youtube.com/@TylerSwartzMusic" target="_blank">
+    <img src="https://img.icons8.com/?size=256&id=108794&format=png" alt="YouTube" width="150">
+</a>
+<a href="https://open.spotify.com/artist/1pM0LqAECjKZF9sKbXjdbh" target="_blank">
+    <img src="https://img.icons8.com/?size=256&id=63316&format=png" alt="Spotify" width="150">
+</a>
+<a href="https://music.apple.com/us/artist/tyler-swartz/1862284962" target="_blank">
+    <img src="https://img.icons8.com/?size=256&id=81TSi6Gqk0tm&format=png" alt="Spotify" width="150">
+</a>
+
+
+</body>
+</html>
